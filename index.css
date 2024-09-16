@@ -1,4 +1,5 @@
 body {
+    padding: 7px 25px;
     font-family: helvetica, sans-serif;
     color:#fff;
     width: 750px;
@@ -9,6 +10,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 50px;
+    
   }
   a:link {
     color: rgb(118, 229, 192);
