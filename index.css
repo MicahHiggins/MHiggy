@@ -1,0 +1,28 @@
+body {
+    font-family: helvetica, sans-serif;
+    color:#fff;
+    width: 750px;
+    background-image: linear-gradient(to left,#9b46ea,#e052a0);
+    
+  }
+  nav{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  a:link {
+    color: rgb(118, 229, 192);
+    width: 70px;
+  }
+  
+  a:visited {
+    color: rgb(54, 73, 126);
+    
+  }
+  
+  a:hover {
+    color: rgb(105, 67, 134);
+    
+
+  }
+  
