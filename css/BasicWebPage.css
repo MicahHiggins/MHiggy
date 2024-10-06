@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Noto+Serif:wght@700&family=Open+Sans&display=swap');
+
+
+body {
+  color: #392511;
+  background:#bcb0ee;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  flex:auto;
+}
+
+/* Hide only visually, but have it available for screen readers: */
+
+/* .LeftWrapper {
+    max-width: 1170px;
+    min-width: 700px;
+    margin-left: none;
+    margin-right: auto;
+    /* position: sticky;
+    top: 22px; 
+    
+} */
+.wrapper {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Noto Serif', serif;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+p {
+  line-height: 1.85em;
+  text-indent: 50px;
+  margin-bottom: 25px;
+}
+
+nav {
+    
+    color:#392511;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a:hover {
+    color: black;
+  }
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+
+
+
+/* @media (max-width: 800px) {
+    .sr-only {
+        border: 0;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+      }
+} */
