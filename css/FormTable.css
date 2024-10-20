@@ -25,6 +25,15 @@ body {
     line-height: 1.85em;
     margin-bottom: 15px;
   }
+  nav ul {
+    list-style: none;
+  }
+  main ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 5px;
+  }
 
 .skip-link {
   background: black;
@@ -36,7 +45,7 @@ body {
 }
 
 .skip-link:focus {
-  transform: translateY(-100%);
+  transform: translateY(-80%);
 }
 
 .skip-link {
@@ -100,6 +109,8 @@ input:focus {
   td {
     padding-left: 5px;
     padding-right: 50px;
+    padding-top: 8px;
+    padding-bottom: 3px;
   }
 img{
     padding: 20px;
