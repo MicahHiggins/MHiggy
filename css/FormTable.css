@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+body {
+    background:#dfdaf0;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    flex:auto;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: 'Noto Serif', serif;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+  }
+  
+  h2 {
+    font-size: 1.4em;
+  }
+  
+  p {
+    line-height: 1.85em;
+    margin-bottom: 15px;
+  }
+
+.skip-link {
+  background: black;
+  color: #fff;
+  font-weight: 700;
+  padding: 4px;
+  position: absolute;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: translateY(-100%);
+}
+
+.skip-link {
+  /* Same as  before */
+  transition: transform 0.3s;
+} 
+.wrapper {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 330px;
+    padding-right: 330px;
+}
+
+input:focus {
+    background: black;
+    color: white;
+    border: 4px solid yellow;
+  
+  }
+  input:valid {
+    border: 2px solid green;
+  }
+  
+  input:invalid {
+    border: 1px dotted red;
+  }
+  
+  label
+   {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /*will target any field that is not submitted and is valid*/
+  input:not([type="submit"]):valid {
+      border-color: #3d9ca8;
+      box-shadow: 0 0 3px #3d9ca8;
+  }
+  
+  /* Hide and show list of inputRequirements when interacting with input */
+  input:not([type="submit"]) + .inputRequirements {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1s ease-out;
+  }
+  
+  input:not([type="submit"]):hover + .inputRequirements,
+  input:not([type="submit"]):focus + .inputRequirements,
+  input:not([type="submit"]):active + .inputRequirements {
+    max-height: 1000px; /* any large number (bigger then the .inputRequirements list) */
+    transition: max-height 1s ease-in;
+  }
+  table, th, td {
+    border-collapse: collapse;
+  }
+  td {
+    border-collapse: collapse;
+    border: 2px solid rgb(0, 0, 0);
+  }
+  td {
+    padding-left: 5px;
+    padding-right: 50px;
+  }
+img{
+    padding: 20px;
+    width:100px;
+}
+footer ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 5px;
+}
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  @media (max-width: 1300px) {
+    .wrapper {
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+@media (max-width: 1100px) {
+    .wrapper {
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
+@media (max-width: 900px) {
+    .wrapper {
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+@media (max-width: 700px) {
+    .wrapper {
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
