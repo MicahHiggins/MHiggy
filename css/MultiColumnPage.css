@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Noto+Serif:wght@700&family=Open+Sans&display=swap');
+body {
+    color: #392511;
+    background:#bcb0ee;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    flex:auto;
+  }
+
+h1,
+h2,
+h3 {
+  font-family: 'Noto Serif', serif;
+}
+
+header,
+  nav,
+  main,
+  aside,
+  footer {
+    padding: 1.8em;
+    border: 1.2px black solid;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 7px;
+}
+  
+  header,
+  footer {
+    text-align: center;
+  }
+    /*PC*/
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgb(84, 176, 129);
+    display: grid;
+    width: 120vw;
+    height: 100vh;
+    grid-template-columns:
+     1fr       2fr       1fr;
+    grid-template-areas:
+    "heady     heady     heady"
+    "navvy     navvy     navvy"
+    "aside1    mainy     aside2"
+    "aside1    mainy     aside2"
+    "aside1    mainy     aside2"
+    "footy     footy     footy";
+  }
+  
+  header {grid-area: heady; background:rgb(213, 214, 255);}
+  nav {grid-area: navvy; background:rgb(239, 185, 255);}
+  main {grid-area: mainy; background: rgb(176, 199, 230); max-height: 100%;}
+  #aside1 {grid-area: aside1; background: rgb(205, 222, 248);}
+  #aside2 {grid-area: aside2; background: rgb(205, 222, 248);}
+  footer {grid-area: footy; background: rgb(241, 207, 255);}
+  
+  nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  }
+  
+  nav ul li {
+    list-style: none
+  }
+  
+.skip-link {
+    background: black;
+    color: #fff;
+    font-weight: 700;
+    padding: 4px;
+    position: absolute;
+    transform: translateY(-200%);
+  }
+  
+  .skip-link:focus {
+    transform: translateY(0%);
+  }
+  
+  .skip-link {
+    /* Same as  before */
+    transition: transform 0.3s;
+  } 
+  .sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+    /*iPad*/
+  @media screen
+    and (min-width: 641px)
+    and (max-width: 1100px)  {
+  .container {
+  grid-template-columns:
+     1fr 1fr;
+  grid-template-areas:
+    "heady heady"
+    "navvy navvy"
+    "mainy mainy"
+    "aside1 aside1"
+    "aside2 aside2"
+    "footy footy";
+  }
+  }
+  
+  /*Phone*/
+  @media screen
+    and (max-width: 640px)  {
+  .container {
+  grid-template-columns:
+     1fr;
+  grid-template-areas:
+    "heady"
+    "mainy"
+    "aside1"
+    "aside2"
+    "navvy"
+    "footy";
+  }
+  
+  /*Thumbable Buttons*/
+  nav ul {
+    flex-flow: column nowrap;
+    text-align: center;
+  }
+  nav ul li a {
+    display: block;
+    padding: 10px 5px;
+    margin: 5px;
+    border: 1px black solid;
+    background: white;
+  
+  }
+
+}
