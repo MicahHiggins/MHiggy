@@ -2,9 +2,12 @@ body {
     padding: 7px 25px;
     font-family: helvetica, sans-serif;
     color:#fff;
-    width: 750px;
+   
     background-image: linear-gradient(to left,#9b46ea,#e052a0);
-    
+    flex:auto;
+  }
+  img {
+    width: 220px;
   }
   nav{
     display: flex;
@@ -27,4 +30,118 @@ body {
     
 
   }
+  .skip-link {
+    background: black;
+    color: #fff;
+    font-weight: 700;
+    padding: 4px;
+    position: absolute;
+    transform: translateY(-200%);
+  }
   
+  .skip-link:focus {
+    transform: translateY(0%);
+  }
+  
+  .skip-link {
+    /* Same as  before */
+    transition: transform 0.3s;
+  } 
+  .sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  header,
+  nav,
+  main,
+  aside,
+  footer {
+    padding: 1.8em;
+    /* border: 1.2px black solid; */
+  }
+  header,
+  footer {
+    text-align: center;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background: rgb(84, 176, 129); */
+    display: grid;
+    width: 100vw;
+    height: 10vh;
+    grid-template-columns:
+     1fr       2fr       1fr;
+    grid-template-areas:
+    "heady     heady     heady"
+    "navvy     mainy     aside1"
+    "navvy     mainy     aside1"
+    "navvy     mainy     aside1"
+    "navvy     mainy     aside1";
+  }
+  header {grid-area: heady; }
+  nav {grid-area: navvy;}
+  main {grid-area: mainy; max-height: 100%;}
+  #aside1 {grid-area: aside1; }
+/*iPad*/
+@media screen
+and (min-width: 691px)
+and (max-width: 1100px)  {
+.container {
+grid-template-columns:
+ 1fr 1fr;
+grid-template-areas:
+"heady heady"
+"navvy navvy"
+"mainy mainy"
+"aside1 aside1"
+"aside2 aside2"
+"footy footy";
+/* width: 700px; */
+}
+}
+
+/*Phone*/
+@media screen
+and (max-width: 690px)  {
+.container {
+grid-template-columns:
+ 1fr;
+grid-template-areas:
+"heady"
+"mainy"
+"aside1"
+"aside2"
+"navvy"
+"footy";
+}
+
+/*Thumbable Buttons*/
+nav ul {
+flex-flow: column nowrap;
+text-align: center;
+}
+nav ul li a {
+display: block;
+padding: 10px 5px;
+margin: 5px;
+border: 1px black solid;
+background: white;
+
+}
+}
+
+  
+  nav ul li {
+    list-style: none
+  }
+  main nav ul li {
+    list-style: disc
+  }
