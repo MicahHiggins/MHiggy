@@ -40,7 +40,7 @@ body {
   aside,
   footer {
     padding: 1.8em;
-    border: 0.1px black solid;
+    /* border: 0.1px black solid; */
   }
   nav {
     padding: 0em;
@@ -68,7 +68,7 @@ body {
   header {grid-area: heady; background-image: linear-gradient(to bottom,rgb(182, 183, 218),rgb(213, 214, 255))}
   nav {grid-area: navvy; background-image: linear-gradient(to bottom, rgb(213, 214, 255), rgb(241, 204, 252));}
   main {grid-area: mainy; background-image: linear-gradient(to bottom, rgb(241, 204, 252), rgb(213, 214, 255),rgb(241, 204, 252)); max-height: 100%;}
-  #aside1 {grid-area: aside1; background-image: linear-gradient(to left, rgb(241, 204, 252), rgb(213, 214, 255),rgb(241, 204, 252));}
+  #aside1 {grid-area: aside1; background-image: linear-gradient(to bottom, rgb(241, 204, 252), rgb(213, 214, 255),rgb(241, 204, 252));}
   footer {grid-area: footy; background-image: linear-gradient(to bottom, rgb(241, 204, 252),rgb(227, 186, 239));}
 
 .dark-mode {
