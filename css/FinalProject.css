@@ -1,0 +1,74 @@
+body {
+    color: #392511;
+    background-image: linear-gradient(to bottom,#bcb0ee,#cab0ee);
+
+    font-family: 'Open Sans', sans-serif;
+    flex:auto;
+  }
+
+.skip-link {
+    background: black;
+    color: #fff;
+    font-weight: 700;
+    padding: 4px;
+    position: absolute;
+    transform: translateY(-200%);
+  }
+
+  .skip-link:focus {
+    transform: translateY(0%);
+  }
+  
+  .skip-link {
+    /* Same as  before */
+    transition: transform 0.3s;
+  } 
+  .sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  header,
+  nav,
+  main,
+  aside,
+  footer {
+    padding: 1.8em;
+    border: 0.2px black solid;
+  }
+  .container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgb(227, 251, 237);
+    grid-template-columns:
+     3fr       1fr;
+    grid-template-areas:
+    "heady   heady"
+    "navvy   navvy"
+    "mainy   aside1"
+    "mainy   aside1"
+    "mainy   aside1"
+    "footy   footy";
+  }
+  header {grid-area: heady; background:rgb(213, 214, 255);}
+  nav {grid-area: navvy; background:rgb(241, 204, 252);}
+  main {grid-area: mainy; background: rgb(176, 199, 230); max-height: 100%;}
+  #aside1 {grid-area: aside1; background: rgb(205, 222, 248);}
+  footer {grid-area: footy; background: rgb(241, 204, 252);}
+
+  nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 2em;
+    }

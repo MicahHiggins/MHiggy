@@ -9,10 +9,16 @@ body {
   img {
     width: 220px;
   }
-  nav{
+  nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+  }
+  main nav ul{
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 30px;
     
   }
   a:link {
@@ -75,7 +81,7 @@ body {
     margin: 0 auto;
     /* background: rgb(84, 176, 129); */
     display: grid;
-    width: 100vw;
+    width: 80vw;
     height: 10vh;
     grid-template-columns:
      1fr       2fr       1fr;
