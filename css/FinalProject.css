@@ -59,12 +59,17 @@ body {
     "mainy   aside1"
     "footy   footy";
   }
-  header {grid-area: heady; background:rgb(213, 214, 255);}
-  nav {grid-area: navvy; background:rgb(241, 204, 252);}
-  main {grid-area: mainy; background: rgb(176, 199, 230); max-height: 100%;}
-  #aside1 {grid-area: aside1; background: rgb(205, 222, 248);}
-  footer {grid-area: footy; background: rgb(241, 204, 252);}
+  header {grid-area: heady; background-image: linear-gradient(to bottom,rgb(182, 183, 218),rgb(213, 214, 255))}
+  nav {grid-area: navvy; background-image: linear-gradient(to bottom, rgb(213, 214, 255), rgb(241, 204, 252));}
+  main {grid-area: mainy; background-image: linear-gradient(to bottom, rgb(241, 204, 252), rgb(213, 214, 255),rgb(241, 204, 252)); max-height: 100%;}
+  #aside1 {grid-area: aside1; background-image: linear-gradient(to left, rgb(241, 204, 252), rgb(213, 214, 255),rgb(241, 204, 252));}
+  footer {grid-area: footy; background-image: linear-gradient(to bottom, rgb(241, 204, 252),rgb(227, 186, 239));}
 
+.dark-mode {
+  /*not yet working*/
+  color:rgb(227, 186, 239);
+  background-image: linear-gradient(to bottom,#210982,#683ba6);
+}
   nav ul {
     display: flex;
     flex-flow: row nowrap;
