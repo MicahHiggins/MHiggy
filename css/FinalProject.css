@@ -7,7 +7,7 @@ body {
   }
 
 .skip-link {
-    background: black;
+    background: rgb(44, 26, 124);
     color: #fff;
     font-weight: 700;
     padding: 4px;
@@ -40,7 +40,10 @@ body {
   aside,
   footer {
     padding: 1.8em;
-    border: 0.2px black solid;
+    border: 0.1px black solid;
+  }
+  nav {
+    padding: 0em;
   }
   header {
     text-align: center;
