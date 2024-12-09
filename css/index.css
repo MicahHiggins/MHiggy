@@ -75,7 +75,9 @@ body {
     text-align: center;
   }
   footer {
-    padding-top: 2.5em;
+    margin-top: 2.5em;
+    background-image: linear-gradient(to right,#4e0f67,#66105b);
+    border:solid 1px #280a44
   }
   main {
     padding-right: 2em;
