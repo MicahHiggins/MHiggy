@@ -1,13 +1,13 @@
 body {
-    color: #392511;
-    background-image: linear-gradient(to bottom,#bcb0ee,#cab0ee);
+    color: #000000;
+    background: #8c8c8c;
 
     font-family: 'Open Sans', sans-serif;
     flex:auto;
   }
 
 .skip-link {
-    background: rgb(44, 26, 124);
+    background: rgb(81, 79, 83);
     color: #fff;
     font-weight: 700;
     padding: 4px;
@@ -35,7 +35,7 @@ body {
     width: 1px;
   }
   header,
-  nav,
+  
   main,
   aside,
   footer {
@@ -44,10 +44,26 @@ body {
   }
   nav {
     padding: 0em;
+    margin: 0em;
+    /* border: 0.1px black solid; */
   }
   header {
     text-align: center;
   }
+  /* .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  } */
+  button {
+    
+    height: 85px;
+    width: 100px;
+  }
+  
   .container {
     display: grid;
     width: 100vw;
@@ -65,21 +81,110 @@ body {
     "mainy   aside1"
     "footy   footy";
   }
-  header {grid-area: heady; background-image: linear-gradient(to bottom,rgb(182, 183, 218),rgb(213, 214, 255))}
+  header {grid-area: heady; background: rgb(215, 213, 215)}
+  nav {grid-area: navvy; background: rgb(226, 224, 228);}
+  main {grid-area: mainy; background: rgb(233, 233, 240); max-height: 100%;}
+  #aside1 {grid-area: aside1; background: rgb(227, 227, 229);}
+  footer {grid-area: footy; background: rgb(217, 219, 219);}
+  button { border-color:#ffffff;background: rgb(204, 204, 206)}
+
+  /* header {grid-area: heady; background-image: linear-gradient(to bottom,rgb(182, 183, 218),rgb(213, 214, 255))}
   nav {grid-area: navvy; background-image: linear-gradient(to bottom, rgb(213, 214, 255), rgb(241, 204, 252));}
   main {grid-area: mainy; background-image: linear-gradient(to bottom, rgb(241, 204, 252), rgb(213, 214, 255),rgb(241, 204, 252)); max-height: 100%;}
   #aside1 {grid-area: aside1; background-image: linear-gradient(to bottom, rgb(241, 204, 252), rgb(213, 214, 255),rgb(241, 204, 252));}
-  footer {grid-area: footy; background-image: linear-gradient(to bottom, rgb(241, 204, 252),rgb(227, 186, 239));}
-
-.dark-mode {
-  /*not yet working*/
-  color:rgb(227, 186, 239);
-  background-image: linear-gradient(to bottom,#210982,#683ba6);
-}
+  footer {grid-area: footy; background-image: linear-gradient(to bottom, rgb(241, 204, 252),rgb(227, 186, 239));} */
   nav ul {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     list-style: none;
-    font-size: 2em;
+    font-size: 1.2em;
     }
+
+  /*Phone*/
+  @media screen
+    and (max-width: 690px)  {
+  .container {
+  width:95vw;
+  grid-template-columns:
+     1fr;
+  grid-template-areas:
+    "heady"
+    "navvy"
+    "mainy"
+    "aside1"  
+    "footy";
+  }
+  
+  /*Thumbable Buttons*/
+  nav ul {
+    flex-flow: column nowrap;
+    text-align: center;
+    padding: 0px;
+  }
+  nav ul li a {
+    display: block;
+    padding: 10px 5px;
+    margin: 5px;
+    border: 1px black solid;
+    background: white;
+  
+  }
+  
+}
+.dark-mode {
+  color:aliceblue;
+  header {grid-area: heady; background: rgb(32, 32, 32)}
+  nav {grid-area: navvy; background: rgb(44, 42, 44);}
+  main {grid-area: mainy; background: rgb(53, 51, 57); max-height: 100%;}
+  #aside1 {grid-area: aside1; background: rgb(43, 43, 43);}
+  footer {grid-area: footy; background: rgb(40, 41, 41);}
+  a:link {
+    color: rgb(230, 222, 232);
+    background-color: transparent;
+    text-decoration: none;
+}
+  a:visited {
+    color: rgb(212, 199, 215);
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+  button { color:aliceblue; background:rgb(95, 95, 96)}
+  @media screen
+    and (max-width: 690px)  {
+      
+      a:visited {
+        color: rgb(104, 47, 117);
+        background-color: transparent;
+        text-decoration: none;
+    }
+    nav ul li a {
+      display: block;
+      padding: 10px 5px;
+      margin: 5px;
+      border: 1px black solid;
+      background: rgb(50, 124, 188);
+    
+    }
+     
+    .skip-link {
+      background: rgb(47, 46, 49);
+      color: #fff;
+      font-weight: 700;
+      padding: 4px;
+      position: absolute;
+      transform: translateY(-200%);
+    }
+    .skip-link:focus {
+      transform: translateY(0%);
+    }
+    
+    .skip-link {
+      
+      transition: transform 0.3s;
+    } 
+  }
+}
+
+  
