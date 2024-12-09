@@ -25,29 +25,39 @@
         <section id="maincontent">
         
         <h2 id="How">How to use Universal Design</h2>
+        
+        <h3>Semantic Structure</h3>
         <p>
-            Semantic Structure:
-Regions
-Headings
-Lists
-Tables
-Forms
-
-		Responsive Layout
-Grid
-Flexbox
-		Tools for evaluating accessibility
-HTML5 outliner
-WAVE
-Silktide Accessibility Checker
+<strong>Regions.</strong> Regions such as header, nav, main, aside, and footer will define the fundamental structure of your page. Each of these should be direct children to the body element for screen readers to function properly. Only use the nav region for navigation purposes 
+Headings. Headings will be what users' eyes are drawn towards so that they can become familiar with its structure and organization. Use headings in order (do not skip from h3 to h5) in order to avoid confusion.
+Lists. Unordered lists are used for content with no inherent order and will often be bulleted. Ordered lists are used for items with ranking and will often be numbered. Description lists are used for value pairs such as dictionary terms or FAQ entries.
+Tables. Tables will usually have a quick description beforehand explaining the content it displays which can be done using the caption element right after the table tag. The td element is used for table data cells and the th element is used for table header cells. The scope attribute will be used to plan out the number of columns you desire and allow you to assign headers for cells in your rows.
+Forms. Matching ID and for values associate labels with their control. fieldset will allow you to contain groups of checkboxes and legend is used to label the group. Input types like password, file, date and time, email, tel, url, number, color, and range require descriptive text with label elements. Use optgroup to group any long lists unless you need the content to be read by a screen reader.
+        </p>
+		<h3>Responsive Layout</h3>
+        <p>
+<strong>Grid. </strong>The CSS grid begins with a container element which can be defined using display: grid. Grid-template-columns and grid-template-rows will set the sizes of your rows and columns. The grid-column and grid-row elements will go under the Grid-template-columns and grid-template-rows parents.
+Flexbox. To define a flex container, use display: flex. Flex-direction will determine the direction that your items follow within your container. Flexbox is a single direction system that will snake back and forth across your page. Flex-wrap will let you change how many items may fit on one line. Justify-content has multiple options that can be used to alter the main axis alignment and overflow. The gap property is another useful feature that determines the spacing between your flex items.
+        </p>
+		<h3>Tools for evaluating accessibility</h3>
+        <p>
+<strong>HTML5 outliner.</strong> A simple yet useful accessibility tool that allows you to see the organization of your page as well as ensure that each section of your page is properly titled.
+WAVE. Another accessibility tool that will display any errors your page may have, including color contrast errors. It can also help you better organize your page and go into depth about the structure of your page.
+Silktide Accessibility Checker. An excellent accessibility checker which can check your page for color contrast, alt text, screen reader functionality, important page items, and can show how your page appears to those with impaired vision or color blindness.
 
         </p>
         <h2 id="Res">Resources</h2>
         <p>
-            https://www.who.int/health-topics/disability#tab=tab_1 
-            Universal Design for Digital Media by Howard Kramer
-            Chapter 6 from usability.gov 
-            webaim.org 
+            <ol>
+                <li>
+                    “We Have Web Accessibility in Mind.” WebAIM, webaim.org/. Accessed 9 Dec. 2024. 
+                </li>
+                <p></p>
+                <li>
+                    Damme, Tim Van, et al. “CSS Flexbox Layout Guide: CSS-Tricks.” CSS, 12 Aug. 2024, css-tricks.com/snippets/css/a-guide-to-flexbox/. 
+                </li>
+            </ol>
+            
             </p>
         </section>
     </main>

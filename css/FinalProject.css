@@ -142,9 +142,13 @@ body {
   #aside1 {grid-area: aside1; background: rgb(43, 43, 43);}
   footer {grid-area: footy; background: rgb(40, 41, 41);}
   a:link {
-    color: rgb(130, 64, 145);
+    color: rgb(164, 91, 181);
     
 }
+  a:visited {
+    color: rgb(214, 214, 214);
+    
+  }
   
 .skip-link {
   background: aliceblue;
@@ -157,7 +161,7 @@ body {
     and (max-width: 690px)  {
       
       a:visited {
-        color: rgb(104, 47, 117);
+        color: rgb(143, 71, 159);
         background-color: transparent;
         text-decoration: none;
     }
