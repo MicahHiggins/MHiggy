@@ -6,23 +6,7 @@ body {
     flex:auto;
   }
 
-.skip-link {
-    background: rgb(81, 79, 83);
-    color: #fff;
-    font-weight: 700;
-    padding: 4px;
-    position: absolute;
-    transform: translateY(-200%);
-  }
 
-  .skip-link:focus {
-    transform: translateY(0%);
-  }
-  
-  .skip-link {
-    /* Same as  before */
-    transition: transform 0.3s;
-  } 
   .sr-only {
     border: 0;
     clip: rect(0, 0, 0, 0);
@@ -164,27 +148,26 @@ body {
       padding: 10px 5px;
       margin: 5px;
       border: 1px black solid;
-      background: rgb(50, 124, 188);
+      background: rgb(255,255,255);
     
     }
-     
-    .skip-link {
-      background: rgb(47, 46, 49);
-      color: #fff;
-      font-weight: 700;
-      padding: 4px;
-      position: absolute;
-      transform: translateY(-200%);
-    }
-    .skip-link:focus {
-      transform: translateY(0%);
-    }
-    
-    .skip-link {
-      
-      transition: transform 0.3s;
-    } 
   }
 }
 
-  
+.skip-link {
+  background: rgb(81, 79, 83);
+  color: #fff;
+  font-weight: 700;
+  padding: 4px;
+  position: absolute;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: translateY(0%);
+}
+
+.skip-link {
+  /* Same as  before */
+  transition: transform 0.3s;
+} 
