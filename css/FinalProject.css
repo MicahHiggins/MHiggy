@@ -60,6 +60,14 @@ body {
   header {
     text-align: center;
   }
+  footer {
+    
+    text-align: center;
+  }
+  footer ul {
+    list-style: none;
+  }
+  
   /* .center {
     margin: 0;
     position: absolute;
@@ -177,6 +185,14 @@ body {
         color: rgb(143, 71, 159);
         background-color: transparent;
         text-decoration: none;
+    }
+    footer ul li a:link {
+      color: rgb(203, 189, 206);
+    }
+    
+    footer ul li a:visited {
+      color: rgb(214, 214, 214);
+      
     }
     nav ul li a {
       display: block;

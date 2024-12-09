@@ -3,36 +3,32 @@ body {
     font-family: helvetica, sans-serif;
     color:#fff;
    
-    background-image: linear-gradient(to left,#9b46ea,#e052a0);
+    background-image: linear-gradient(to left,#4b1380,#871554);
     flex:auto;
   }
   img {
     width: 220px;
+    border:2px solid black;
   }
   nav ul{
     display: flex;
-    flex-direction: column;
-    gap: 5px;
-    
-  }
-  main nav ul{
-    display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 15px;
     
   }
+ 
   a:link {
-    color: rgb(118, 229, 192);
-    width: 70px;
+    color: rgb(142, 237, 206);
+   
   }
   
   a:visited {
-    color: rgb(54, 73, 126);
+    color: rgb(215, 168, 122);
     
   }
   
   a:hover {
-    color: rgb(105, 67, 134);
+    color: rgb(164, 110, 205);
     
 
   }
@@ -65,11 +61,10 @@ body {
     width: 1px;
   }
   header,
-  nav,
   main,
   aside,
   footer {
-    padding: 1.8em;
+    padding: 0.6em;
     /* border: 1.2px black solid; */
   }
   header,
@@ -87,15 +82,24 @@ body {
      1fr       2fr       1fr;
     grid-template-areas:
     "heady     heady     heady"
-    "navvy     mainy     aside1"
-    "navvy     mainy     aside1"
-    "navvy     mainy     aside1"
-    "navvy     mainy     aside1";
+    "navvy     navvy     navvy"
+    "mainy     mainy     aside1"
+    "mainy     mainy     aside1"
+    "mainy     mainy     aside1";
   }
   header {grid-area: heady; }
   nav {grid-area: navvy;}
   main {grid-area: mainy; max-height: 100%;}
   #aside1 {grid-area: aside1; }
+  #footer {grid-area: aside1; }
+nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 1.2em;
+  padding:0em;
+  }
 /*iPad*/
 @media screen
 and (min-width: 691px)
@@ -119,13 +123,12 @@ grid-template-areas:
 and (max-width: 690px)  {
 .container {
 grid-template-columns:
- 1fr;
+ 8fr;
 grid-template-areas:
 "heady"
+"navvy"
 "mainy"
 "aside1"
-"aside2"
-"navvy"
 "footy";
 }
 
@@ -133,13 +136,14 @@ grid-template-areas:
 nav ul {
 flex-flow: column nowrap;
 text-align: center;
+gap: none;
 }
 nav ul li a {
 display: block;
-padding: 10px 5px;
-margin: 5px;
+padding: 20px 180px;
+margin: 2px;
 border: 1px black solid;
-background: white;
+background-image: linear-gradient(to right,#3c0f67,#66103f);
 
 }
 }
