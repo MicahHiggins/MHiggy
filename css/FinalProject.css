@@ -1,11 +1,28 @@
 body {
     color: #000000;
-    background: #8c8c8c;
+    background: #5a5a5a;
 
     font-family: 'Open Sans', sans-serif;
     flex:auto;
   }
-
+  .skip-link {
+    background: rgb(81, 79, 83);
+    color: #fff;
+    font-weight: 700;
+    padding: 4px;
+    position: absolute;
+    transform: translateY(-200%);
+  }
+  
+  .skip-link:focus {
+    transform: translateY(0%);
+    transform: translateX(5%);
+  }
+  
+  .skip-link {
+    /* Same as  before */
+    transition: transform 0.3s;
+  } 
 
   .sr-only {
     border: 0;
@@ -83,6 +100,7 @@ body {
     justify-content: space-around;
     list-style: none;
     font-size: 1.2em;
+    padding:0em;
     }
 
   /*Phone*/
@@ -124,16 +142,16 @@ body {
   #aside1 {grid-area: aside1; background: rgb(43, 43, 43);}
   footer {grid-area: footy; background: rgb(40, 41, 41);}
   a:link {
-    color: rgb(230, 222, 232);
-    background-color: transparent;
-    text-decoration: none;
-}
-  a:visited {
-    color: rgb(212, 199, 215);
-    background-color: transparent;
-    text-decoration: none;
+    color: rgb(130, 64, 145);
+    
 }
   
+.skip-link {
+  background: aliceblue;
+  
+}
+
+
   button { color:aliceblue; background:rgb(95, 95, 96)}
   @media screen
     and (max-width: 690px)  {
@@ -148,26 +166,9 @@ body {
       padding: 10px 5px;
       margin: 5px;
       border: 1px black solid;
-      background: rgb(255,255,255);
+      background: aliceblue;
     
     }
   }
 }
 
-.skip-link {
-  background: rgb(81, 79, 83);
-  color: #fff;
-  font-weight: 700;
-  padding: 4px;
-  position: absolute;
-  transform: translateY(-200%);
-}
-
-.skip-link:focus {
-  transform: translateY(0%);
-}
-
-.skip-link {
-  /* Same as  before */
-  transition: transform 0.3s;
-} 
