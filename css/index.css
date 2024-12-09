@@ -131,7 +131,11 @@ grid-template-areas:
 /*Phone*/
 @media screen
 and (max-width: 690px)  {
+img {
+  width: 200px;
+}
 .container {
+
 grid-template-columns:
  1fr;
 grid-template-areas:
@@ -150,7 +154,7 @@ gap: none;
 }
 nav ul li a {
 display: block;
-padding: 20px 180px;
+padding: 20px 10px;
 margin: 2px;
 border: 1px black solid;
 background-image: linear-gradient(to right,#3c0f67,#66103f);
