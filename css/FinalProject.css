@@ -151,7 +151,7 @@ body {
   #aside1 {grid-area: aside1; background: rgb(43, 43, 43);}
   footer {grid-area: footy; background: rgb(40, 41, 41);}
   a:link {
-    color: rgb(215, 143, 232);
+    color: rgb(203, 189, 206);
     
 }
   a:visited {
@@ -159,16 +159,20 @@ body {
     
   }
   
-.skip-link {
-  background: aliceblue;
-  
-}
+  .skip-link:link {
+    background: rgb(255, 255, 255);
+    color:#000000;
+    
+  }
 
 
   button { color:aliceblue; background:rgb(95, 95, 96)}
   @media screen
     and (max-width: 690px)  {
-      
+      a:link {
+        color: rgb(130, 70, 144);
+        
+    }
       a:visited {
         color: rgb(143, 71, 159);
         background-color: transparent;
