@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicahHiggins-FinalProject-How</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/FinalProjectObject.css">
+</head>
+<body>
+    <a class="skip-link" href="#maincontent">Skip to main content</a>
+<div class="container">
+    <header>
+        <h1>Voice Activated Photo Taker
+            
+        </h1>
+        <h2>Micah Higgins</h2>
+    </header>
+    
+    <main>
+        <section id="maincontent">
+            <p> This project was inspired by the cold winter air that leads me to wearing gloves. But these gloves are not compatible with my phone so I can't take pictures of any beautiful scenery I may come across. 
+                A fix for this is voice activated pictures where I don't need to press any buttons with my thick gloves. <br>
+            </p>
+        <h3>Iteration 1</h3>
+        <p>I started by measuring the distances between the iPhones' photo button, it's rotate button and where my two servo motors would go. I then designed a case to hold my phone and the two servos. I also created little pieces to attach to these servos which held screw in fiber mesh tips. <br> In the video below, I trained my microphone device and designed my code so that if I said the word "Photo" it would cause one servo motor to spin and if I said the word "Rotate" it would cause the other servo motor to spin </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ASp5MJHiuYI?si=OQLMi8DJPCnBtkoE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>       
+        <p>After implementing my phone into my projects case, the voice activation and motors worked but the fiber mesh tips making contact with the iPhones buttons did not register as a change in conductivity and my project couldn't take photos.</p>
+        <h3>Iteration 2</h3>
+            <p>For the next iteration, I used a stronger motor that pressed the volume buttons on the side of the phone to take a picture, meaning no capacitance would be required. The power comes from a portable charger that connects to my ardunio uno.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QBiRMEduj60?si=EXL0LFn_25DxFFa4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!-- <embed type="video/webm" src="video.mp4" width="400" height="300"> -->
+                    
+        </section>
+    </main>
+    <aside id="aside1">
+        <img src="img/IMG_3690.jpg" alt="Orange 3D printed prototype" >
+        <img src="img/IMG_3691.jpg" alt="Orange 3D printed prototype" >
+        
+        <img src="img/IMG_3581.jpg" alt="Orange 3D printed prototype" >
+        
+    </aside>
+    <aside id="aside2">
+        <img src="img/IMG_3693.jpg" alt="Orange 3D printed prototype" >
+        <img src="img/IMG_3705.jpg" alt="Orange 3D printed prototype" >
+    </aside>
+    <aside id="aside3">
+        <!-- <h3>Toggle Dark/Light Mode Button</h3> -->
+        <div class="center">
+            <button onclick="myFunction()">Toggle dark mode</button>
+        </div>
+        
+    </aside>
+    <footer>
+        <ul>
+            <li><a href="https://micahhiggins.github.io/MHiggy/index">My Webpage</a></li>
+            <li><p>Email: mihi2637@colorado.edu</p></li>
+        </ul>
+    </footer>
+    <script src="js/FinalProject.js"></script>
+    
+</div>
+</body>
+</html>
